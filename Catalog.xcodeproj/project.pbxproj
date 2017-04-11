@@ -16,6 +16,7 @@
 		FB39B2361E950FA5007BFCD5 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39B2351E950FA5007BFCD5 /* ImageCell.m */; };
 		FB39B2391E961153007BFCD5 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39B2381E961153007BFCD5 /* Data.m */; };
 		FB39B23C1E9651B2007BFCD5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39B23B1E9651B2007BFCD5 /* DetailViewController.m */; };
+		FB9338BF1E9CA90E00720469 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9338BE1E9CA90E00720469 /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		FB39B2381E961153007BFCD5 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		FB39B23A1E9651B2007BFCD5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		FB39B23B1E9651B2007BFCD5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FB9338BD1E9CA90E00720469 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		FB9338BE1E9CA90E00720469 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				FB39B2201E94D3FF007BFCD5 /* ViewController.h */,
 				FB39B2211E94D3FF007BFCD5 /* ViewController.m */,
 				FB39B2231E94D3FF007BFCD5 /* Main.storyboard */,
+				FB9338BD1E9CA90E00720469 /* InfoViewController.h */,
+				FB9338BE1E9CA90E00720469 /* InfoViewController.m */,
 				FB39B23A1E9651B2007BFCD5 /* DetailViewController.h */,
 				FB39B23B1E9651B2007BFCD5 /* DetailViewController.m */,
 				FB39B2261E94D3FF007BFCD5 /* Assets.xcassets */,
@@ -171,6 +176,7 @@
 				FB39B2361E950FA5007BFCD5 /* ImageCell.m in Sources */,
 				FB39B21F1E94D3FF007BFCD5 /* AppDelegate.m in Sources */,
 				FB39B21C1E94D3FF007BFCD5 /* main.m in Sources */,
+				FB9338BF1E9CA90E00720469 /* InfoViewController.m in Sources */,
 				FB39B23C1E9651B2007BFCD5 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +336,7 @@
 				FB39B2301E94D3FF007BFCD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

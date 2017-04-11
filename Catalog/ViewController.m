@@ -22,6 +22,9 @@
     
     self.navigationItem.title = @"Каталог";
     _data = [Data fetchData];
+    
+    self.tableView.estimatedRowHeight = 64;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
 
 
