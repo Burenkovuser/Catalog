@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface InfoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *_info;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

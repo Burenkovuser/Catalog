@@ -7,6 +7,9 @@
 //
 
 #import "InfoViewController.h"
+#import "InfoCell.h"
+#import "Info.h"
+#import "InfoDetailViewController.h"
 
 @interface InfoViewController ()
 
@@ -16,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"Информация";
+    _info = [Info fetchInfo];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,31 +31,23 @@
 #pragma mark - UITableViewDataSource
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [_info count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
 
-    static NSString const *CellID = @"InfoCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
-    
-    cell.textLabel.text = @"123";
-    
-    
-    /*
+   
     static NSString* identifier = @"InfoCell";
     InfoCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell = [[ImageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[InfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-   
-   // Data *item = [_data objectAtIndex:indexPath.row];
-    //cell.cellTextLabel.text = item.title;
-   // cell.cellImageView.image = [UIImage imageNamed:item.imageName];
-    */
+    
+    Info *item = [_info objectAtIndex:indexPath.row];
+    cell.cellImageInfoView.image = [UIImage imageNamed:item.imageName];
+    cell.cellInfoTextLabel.text = item.title;
+    
     return cell;
 }
 
@@ -61,17 +57,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark-Segue
 
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    if (indexPath) {
+        Info *item = [_info objectAtIndex:indexPath.row];
+        [segue.destinationViewController setInfoDetail:item];
+    }
 }
-*/
+
 
 @end

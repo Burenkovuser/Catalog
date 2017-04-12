@@ -17,6 +17,9 @@
 		FB39B2391E961153007BFCD5 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39B2381E961153007BFCD5 /* Data.m */; };
 		FB39B23C1E9651B2007BFCD5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB39B23B1E9651B2007BFCD5 /* DetailViewController.m */; };
 		FB9338BF1E9CA90E00720469 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9338BE1E9CA90E00720469 /* InfoViewController.m */; };
+		FB9338C51E9CE00E00720469 /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9338C41E9CE00E00720469 /* InfoCell.m */; };
+		FB9338C81E9CEC2500720469 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9338C71E9CEC2500720469 /* Info.m */; };
+		FB9338CB1E9DFD7500720469 /* InfoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9338CA1E9DFD7500720469 /* InfoDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,12 @@
 		FB39B23B1E9651B2007BFCD5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		FB9338BD1E9CA90E00720469 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		FB9338BE1E9CA90E00720469 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		FB9338C31E9CE00E00720469 /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoCell.h; path = ../InfoCell.h; sourceTree = "<group>"; };
+		FB9338C41E9CE00E00720469 /* InfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoCell.m; path = ../InfoCell.m; sourceTree = "<group>"; };
+		FB9338C61E9CEC2500720469 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		FB9338C71E9CEC2500720469 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		FB9338C91E9DFD7500720469 /* InfoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoDetailViewController.h; sourceTree = "<group>"; };
+		FB9338CA1E9DFD7500720469 /* InfoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,15 +79,21 @@
 		FB39B2191E94D3FF007BFCD5 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				FB9338C31E9CE00E00720469 /* InfoCell.h */,
+				FB9338C41E9CE00E00720469 /* InfoCell.m */,
 				FB39B2341E950FA5007BFCD5 /* ImageCell.h */,
 				FB39B2351E950FA5007BFCD5 /* ImageCell.m */,
 				FB39B2371E961153007BFCD5 /* Data.h */,
 				FB39B2381E961153007BFCD5 /* Data.m */,
+				FB9338C61E9CEC2500720469 /* Info.h */,
+				FB9338C71E9CEC2500720469 /* Info.m */,
 				FB39B21D1E94D3FF007BFCD5 /* AppDelegate.h */,
 				FB39B21E1E94D3FF007BFCD5 /* AppDelegate.m */,
 				FB39B2201E94D3FF007BFCD5 /* ViewController.h */,
 				FB39B2211E94D3FF007BFCD5 /* ViewController.m */,
 				FB39B2231E94D3FF007BFCD5 /* Main.storyboard */,
+				FB9338C91E9DFD7500720469 /* InfoDetailViewController.h */,
+				FB9338CA1E9DFD7500720469 /* InfoDetailViewController.m */,
 				FB9338BD1E9CA90E00720469 /* InfoViewController.h */,
 				FB9338BE1E9CA90E00720469 /* InfoViewController.m */,
 				FB39B23A1E9651B2007BFCD5 /* DetailViewController.h */,
@@ -172,10 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB39B2391E961153007BFCD5 /* Data.m in Sources */,
+				FB9338C51E9CE00E00720469 /* InfoCell.m in Sources */,
 				FB39B2221E94D3FF007BFCD5 /* ViewController.m in Sources */,
 				FB39B2361E950FA5007BFCD5 /* ImageCell.m in Sources */,
 				FB39B21F1E94D3FF007BFCD5 /* AppDelegate.m in Sources */,
+				FB9338C81E9CEC2500720469 /* Info.m in Sources */,
 				FB39B21C1E94D3FF007BFCD5 /* main.m in Sources */,
+				FB9338CB1E9DFD7500720469 /* InfoDetailViewController.m in Sources */,
 				FB9338BF1E9CA90E00720469 /* InfoViewController.m in Sources */,
 				FB39B23C1E9651B2007BFCD5 /* DetailViewController.m in Sources */,
 			);
